@@ -1,18 +1,25 @@
-def generateSampleJob = freeStyleJob("cart2")
+folder( "this" ) {
+    
+}
+def folder = "this"
+def generatejob = folder + "/this"
 
-generateSampleJob.with {
+freeStyleJob(generatejob)
+{
+
 	steps {
 	scm {
         git {
             remote {
-                url('https://github.com/johnvinson/sample-repo.git')
-                credentials('269dd22f-8bfb-4266-a53e-575dcc1446c4')
+                url('https://github.com/ardwin1112/junit-sample.git')
+                credentials('e0b9cd96-7ad0-4a46-b1ac-2c5abd405aac')
             }
         }
     }
 	maven {
 		mavenInstallation('maven')
 		goals('package')
+		
 	}
 	} 
 	
