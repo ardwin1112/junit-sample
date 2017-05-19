@@ -1,7 +1,7 @@
-folder( "this" ) {
+folder( "try" ) {
     
 }
-def folder = "this"
+def folder = "try"
 def generatejob = folder + "/this"
 
 freeStyleJob(generatejob)
