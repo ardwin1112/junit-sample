@@ -1,4 +1,4 @@
-def generateSampleJob = freeStyleJob("Buildme")
+def generateSampleJob = freeStyleJob("bago")
 
 generateSampleJob.with {
 	steps {
